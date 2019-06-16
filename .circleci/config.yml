@@ -1,7 +1,7 @@
 version: 2
 
 defaults: &linux_defaults
-  working_directory: /go/src/github.com/cosmos/gaia
+  working_directory: /go/src/github.com/tichex-project/hackatom-cosmos-tichex
   docker:
     - image: circleci/golang:1.12
       environment:
@@ -145,7 +145,7 @@ jobs:
       - run:
           name: Test Gaia import/export simulation
           command: |
-            /tmp/workspace/bin/runsim -j 4 github.com/cosmos/gaia/app 50 5 TestGaiaImportExport
+            /tmp/workspace/bin/runsim -j 4 github.com/tichex-project/hackatom-cosmos-tichex/app 50 5 TestGaiaImportExport
 
   test_sim_gaia_simulation_after_import:
     <<: *linux_defaults
@@ -160,7 +160,7 @@ jobs:
       - run:
           name: Test Gaia import/export simulation
           command: |
-            /tmp/workspace/bin/runsim -j 4 github.com/cosmos/gaia/app 50 5 TestGaiaSimulationAfterImport
+            /tmp/workspace/bin/runsim -j 4 github.com/tichex-project/hackatom-cosmos-tichex/app 50 5 TestGaiaSimulationAfterImport
 
   test_sim_gaia_multi_seed_long:
     <<: *linux_defaults
@@ -175,7 +175,7 @@ jobs:
       - run:
           name: Test multi-seed Gaia simulation long
           command: |
-            /tmp/workspace/bin/runsim -j 4 github.com/cosmos/gaia/app 500 50 TestFullGaiaSimulation
+            /tmp/workspace/bin/runsim -j 4 github.com/tichex-project/hackatom-cosmos-tichex/app 500 50 TestFullGaiaSimulation
 
   test_sim_gaia_multi_seed:
     <<: *linux_defaults
@@ -190,7 +190,7 @@ jobs:
       - run:
           name: Test multi-seed Gaia simulation short
           command: |
-            /tmp/workspace/bin/runsim -j 4 github.com/cosmos/gaia/app 50 10 TestFullGaiaSimulation
+            /tmp/workspace/bin/runsim -j 4 github.com/tichex-project/hackatom-cosmos-tichex/app 50 10 TestFullGaiaSimulation
 
   test_cover:
     <<: *linux_defaults
@@ -208,7 +208,7 @@ jobs:
           command: |
             export VERSION="$(git describe --tags --long | sed 's/v\(.*\)/\1/')"
             export GO111MODULE=on
-            for pkg in $(go list ./... | grep -v github.com/cosmos/gaia/cli_test | grep -v '/simulation' | circleci tests split --split-by=timings); do
+            for pkg in $(go list ./... | grep -v github.com/tichex-project/hackatom-cosmos-tichex/cli_test | grep -v '/simulation' | circleci tests split --split-by=timings); do
               id=$(echo "$pkg" | sed 's|[/.]|_|g')
               go test -mod=readonly -timeout 8m -race -coverprofile=/tmp/workspace/profiles/$id.out -covermode=atomic -tags='ledger test_ledger_mock' "$pkg" | tee "/tmp/logs/$id-$RANDOM.log"
             done
@@ -385,11 +385,11 @@ jobs:
               rm -rf gitian-build-${os}/
             done
       - store_artifacts:
-          path: /go/src/github.com/cosmos/gaia/gaia-darwin-res.yml
+          path: /go/src/github.com/tichex-project/hackatom-cosmos-tichex/gaia-darwin-res.yml
       - store_artifacts:
-          path: /go/src/github.com/cosmos/gaia/gaia-linux-res.yml
+          path: /go/src/github.com/tichex-project/hackatom-cosmos-tichex/gaia-linux-res.yml
       - store_artifacts:
-          path: /go/src/github.com/cosmos/gaia/gaia-windows-res.yml
+          path: /go/src/github.com/tichex-project/hackatom-cosmos-tichex/gaia-windows-res.yml
 
   contract_tests:
     <<: *linux_defaults

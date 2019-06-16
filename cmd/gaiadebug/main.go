@@ -14,7 +14,7 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	gaia "github.com/cosmos/gaia/app"
+	gaia "github.com/tichex-project/hackatom-cosmos-tichex/app"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/auth"

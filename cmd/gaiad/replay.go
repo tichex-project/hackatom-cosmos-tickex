@@ -17,7 +17,7 @@ import (
 	tmsm "github.com/tendermint/tendermint/state"
 	tm "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/gaia/app"
+	"github.com/tichex-project/hackatom-cosmos-tichex/app"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/server"

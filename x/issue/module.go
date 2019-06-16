@@ -116,7 +116,7 @@ func (am AppModule) InitGenesis(ctx sdk.Context, data json.RawMessage) []abci.Va
 }
 
 // ExportGenesis enforces exporting this module's data to a genesis file
-func (am AppModule) ExportGenesis(ctx sdk.Co	ntext) json.RawMessage {
+func (am AppModule) ExportGenesis(ctx sdk.Context) json.RawMessage {
 	gs := ExportGenesis(ctx, am.keeper)
 	return moduleCodec.MustMarshalJSON(gs)
 }

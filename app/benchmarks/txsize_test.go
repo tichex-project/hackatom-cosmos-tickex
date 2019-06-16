@@ -5,7 +5,7 @@ import (
 
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
-	"github.com/cosmos/gaia/app"
+	"github.com/tichex-project/hackatom-cosmos-tichex/app"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/auth"

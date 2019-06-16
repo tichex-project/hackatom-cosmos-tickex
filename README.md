@@ -2,12 +2,12 @@
 
 ![banner](./docs/welcome-banner.jpg)
 
-[![CircleCI](https://circleci.com/gh/cosmos/gaia/tree/master.svg?style=shield)](https://circleci.com/gh/cosmos/gaia/tree/master)
-[![codecov](https://codecov.io/gh/cosmos/gaia/branch/master/graph/badge.svg)](https://codecov.io/gh/cosmos/gaia)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cosmos/gaia)](https://goreportcard.com/report/github.com/cosmos/gaia)
-[![license](https://img.shields.io/github/license/cosmos/gaia.svg)](https://github.com/cosmos/gaia/blob/master/LICENSE)
-[![LoC](https://tokei.rs/b1/github/cosmos/gaia)](https://github.com/cosmos/gaia)
-[![GolangCI](https://golangci.com/badges/github.com/cosmos/gaia.svg)](https://golangci.com/r/github.com/cosmos/gaia)
+[![CircleCI](https://circleci.com/gh/tichex-project/hackatom-cosmos-tichex/tree/master.svg?style=shield)](https://circleci.com/gh/tichex-project/hackatom-cosmos-tichex/tree/master)
+[![codecov](https://codecov.io/gh/tichex-project/hackatom-cosmos-tichex/branch/master/graph/badge.svg)](https://codecov.io/gh/tichex-project/hackatom-cosmos-tichex)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tichex-project/hackatom-cosmos-tichex)](https://goreportcard.com/report/github.com/tichex-project/hackatom-cosmos-tichex)
+[![license](https://img.shields.io/github/license/tichex-project/hackatom-cosmos-tichex.svg)](https://github.com/tichex-project/hackatom-cosmos-tichex/blob/master/LICENSE)
+[![LoC](https://tokei.rs/b1/github/tichex-project/hackatom-cosmos-tichex)](https://github.com/tichex-project/hackatom-cosmos-tichex)
+[![GolangCI](https://golangci.com/badges/github.com/tichex-project/hackatom-cosmos-tichex.svg)](https://golangci.com/r/github.com/tichex-project/hackatom-cosmos-tichex)
 [![riot.im](https://img.shields.io/badge/riot.im-JOIN%20CHAT-green.svg)](https://riot.im/app/#/room/#cosmos-sdk:matrix.org)
 
 This repository hosts `Gaia`, the first implementation of the Cosmos Hub.

@@ -23,7 +23,7 @@ import (
 	"github.com/tendermint/go-amino"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/gaia/app"
+	"github.com/tichex-project/hackatom-cosmos-tichex/app"
 )
 
 func main() {

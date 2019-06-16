@@ -20,7 +20,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	gaia "github.com/cosmos/gaia/app"
+	gaia "github.com/tichex-project/hackatom-cosmos-tichex/app"
 )
 
 func runHackCmd(cmd *cobra.Command, args []string) error {

@@ -1,4 +1,4 @@
-module github.com/cosmos/gaia
+module github.com/tichex-project/hackatom-cosmos-tichex
 
 go 1.12
 
