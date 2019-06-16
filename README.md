@@ -1,42 +1,95 @@
-# Cosmos Hub
+# TICHEX PROTOCOL
+### THE FIRST EUR PEGGED ECOSYSTEM ON COSMOS
 
-![banner](./docs/welcome-banner.jpg)
+Tichex is a **DPoS blockchain based on Tendermint and Cosmos SDK**.
+The blockchain is based on the Bizantine Fault Tolerance consensus algorithm (consent 2/3 of the network), with DPoS Stacking algorithm.
 
-[![CircleCI](https://circleci.com/gh/tichex-project/hackatom-cosmos-tichex/tree/master.svg?style=shield)](https://circleci.com/gh/tichex-project/hackatom-cosmos-tichex/tree/master)
-[![codecov](https://codecov.io/gh/tichex-project/hackatom-cosmos-tichex/branch/master/graph/badge.svg)](https://codecov.io/gh/tichex-project/hackatom-cosmos-tichex)
-[![Go Report Card](https://goreportcard.com/badge/github.com/tichex-project/hackatom-cosmos-tichex)](https://goreportcard.com/report/github.com/tichex-project/hackatom-cosmos-tichex)
-[![license](https://img.shields.io/github/license/tichex-project/hackatom-cosmos-tichex.svg)](https://github.com/tichex-project/hackatom-cosmos-tichex/blob/master/LICENSE)
-[![LoC](https://tokei.rs/b1/github/tichex-project/hackatom-cosmos-tichex)](https://github.com/tichex-project/hackatom-cosmos-tichex)
-[![GolangCI](https://golangci.com/badges/github.com/tichex-project/hackatom-cosmos-tichex.svg)](https://golangci.com/r/github.com/tichex-project/hackatom-cosmos-tichex)
-[![riot.im](https://img.shields.io/badge/riot.im-JOIN%20CHAT-green.svg)](https://riot.im/app/#/room/#cosmos-sdk:matrix.org)
+The first pegged zone in **EUR**, that is the **EUR/Crypto bridge of Cosmos** and at the same time it is the technological evolution of an already existing **European Financial Institution, namely Em@ney plc**.
 
-This repository hosts `Gaia`, the first implementation of the Cosmos Hub.
+On the Tichex blockchain it will be possible to create different types of tokens (similar to erc20).
 
-**Note**: Requires [Go 1.12+](https://golang.org/dl/)
+The native coin will be **TCX**, it will be used to pay gas, for staking, fees, etc....
+The other token will be **THEUR** (stable coin pagged to **EUR**)
 
-**DISCLAIMER**: The current version of Gaia running the Cosmos Hub (v0.34.x) is
-__NOT__ maintained in this repository. Gaia and the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/)
-have been recently split. All future versions of Gaia, including the next major
-upgrade, will be maintained in this repository. However, until the next major upgrade,
-Gaia should be fetched and built from the latest [released](https://github.com/cosmos/cosmos-sdk/releases)
-__v0.34.x__ version in the SDK repository. In addition, this repository should be
-considered unstable until the next major release of Gaia. Please bear with us
-while we continue the migration process and update documentation.
+The first 2 available modules are:
 
-## Cosmos Hub Mainnet
+Module **ISSUE** with the following characteristics:
 
-To run a full-node for the mainnet of the Cosmos Hub, first [install `gaia`](./docs/installation.md), then follow [the guide](./docs/join-mainnet.md).
+ - approve (Approve spend tokens on behalf of sender)
+ - burn (Token holder burn the token)
+ - burn-from (Token owner burn the token)
+ - create (Issue a new token)
+ - describe (Describe a token)
+ - decrease-approval (Decrease approve spend tokens on behalf of sender)
+ - freeze (Freeze the transfer from a address)
+ - unfreeze (UnFreeze the transfer from an address)
+ - increase-approval (Increase approve spend tokens on behalf of sender)
+ - mint (Mint a token)
+ - send-from (Send tokens from one address to another)
+ - transfer-ownership (Transfer ownership of a token)
+ - disable (Disable feature from a token)
 
-For status updates and genesis file, see the [launch repo](https://github.com/cosmos/launch).
+Module **EXCHANGE**:
+ - make (create a new order)
+ - take (take an active order)
+ - cancel (cancel an existing order)
 
-## Quick Start
+Tichex was created to solve the problem of centralized stable coins. It also solves the problem of liquidity, be they **Crypto/crypto or Crypto/fiat**.
 
-```
-make install
-```
+**ADVANTAGES**
 
-## Disambiguation
+**Transparency**
+The platform works thanks to asynchronous processors that analyze blockchain transactions and communicate to an internal exchange system through private channels, avoiding any impact on provision of services to customers.
 
-This Cosmos-SDK project is not related to the [React-Cosmos](https://github.com/react-cosmos/react-cosmos) project (yet). Many thanks to Evan Coury and Ovidiu (@skidding) for this Github organization name. As per our agreement, this disambiguation notice will stay here.
+**Usability**
+A simple and intuitive interface ensures an experience of smooth and comfortable navigation.
+
+**Transfer everything to everyone**
+
+**Token Issuing**
+Create your own token in just a few seconds
+- with us, it is possible to issue your own token in seconds and immediately use the exchange module integrated in our Blockchain
+
+**Fundraising**
+Launch your crowdsale in just few seconds, directly from you bank account
+- transaction time - less than 5 seconds
+- possibility to raise funds with any token
+- immediately liquidate the amount in EUR 
+- Receive payments in Euro or in any other token part of our blockchain
+
+The wallet is directly linked to your bank account
+- We offer the possibility to request IBAN (especially for businesses).
+- We Issue a Credit Card
+- We offer Mobile Payment System, also integrating plugin for several e-commerce (Magento, Woocommerce, Prestashop...)
+- Funds do not get into a private bank account, but they are generated directly from your bank account.
+- The ability to "cash out" in your bank account offered by Emoney Plc (the Bank we own in Malta) or in any other bank account you want.
+- We are licensed by MFSA - European E-Money Directive (2009/110 / EC)
+- Being regulated by MFSA means that all funds are protected by MFSA and the European Central Bank, meaning that we do not have access to our users' funds, nor can we issue loans.
+
+**Our Partners**
+
+- Emoney
+- BitSong
+- Simply VC
+- BitKash
+
+**Em@ney plc**, Licensed in Malta, is an Electronic Money Institute, authorised by the MFSA in 2013. Emoney cannot manage client funds as investments, nor can issue loans, so it is safer and guaranteed by a regulator.
+
+The Financial Institution with an extended portfolio owns all the opportunities and permissions in accordance with the European Community.
+
+**Em@ney** issues and acquires electronic money, builds innovative tools for payments and creates networks between the biggest european players, the networks and the points of sale.
+
+**BitSong** is a streaming music portal, based on Cosmos.
+
+**BitSong** is a project dedicated to musicians and their fans, which aims to overcome the bureaucratic and economic obstacles within this industry and reward artists and users for simply using the platform.
+
+On the **BitSong** platform you (artist) will be able to produce songs in which an advertiser can attach advertisements and users can access from any device. Funds via the Bitsong token $BTSG will be credited to the artist wallet immediately and they will be able to withdraw or convert as they see fit.
+
+Artists need no longer to wait several months before a record label sends various reports, they can check the progress in real time directly within the Wallet.
+
+**Simply VC** founded in Malta in 2013, Simply VC was established to help support the development of the blockchain ecosystem driven by a strong belief in the vision of a future where decentralised organisations, currencies, economies and networks form the backbone of a better, more egalitarian society.
+
+In the more recent years, they have embarked on their first expansion phase supporting various Proof of Stake projects through both their Infrastructure and Asset Management capabilities.
 
 
+**BitKash** - Virtual mastercards provider, part of the Em@ney's ecosystem.
